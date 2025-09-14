@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/HeartSweeper/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <script>
+      // Diagnostic: show runtime errors on the page for GitHub Pages blank-page debugging
+      window.addEventListener('error', function (e) {
+        document.addEventListener('DOMContentLoaded', function () {
+          var el = document.createElement('pre');
+          el.style.background = '#fee';
+          el.style.color = '#900';
+          el.style.padding = '12px';
+          el.textContent = 'Runtime error: ' + (e && e.message ? e.message : JSON.stringify(e));
+          document.body.appendChild(el);
+        });
+        console.error('Runtime error detected:', e.error || e.message || e);
+      });
+      window.addEventListener('unhandledrejection', function (e) {
+        document.addEventListener('DOMContentLoaded', function () {
+          var el = document.createElement('pre');
+          el.style.background = '#fee';
+          el.style.color = '#900';
+          el.style.padding = '12px';
+          el.textContent = 'Unhandled rejection: ' + (e && e.reason ? (e.reason.message || JSON.stringify(e.reason)) : JSON.stringify(e));
+          document.body.appendChild(el);
+        });
+        console.error('Unhandled rejection detected:', e.reason || e);
+      });
+    </script>
+    <script type="module" crossorigin src="/HeartSweeper/assets/index-CFWTc8cO.js"></script>
+    <link rel="stylesheet" crossorigin href="/HeartSweeper/assets/index-YkoYYc0m.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
